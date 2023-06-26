@@ -1,0 +1,12 @@
+{
+   "app": {
+      "settings": {
+         "connection": {
+            //"host": "localhost",
+            //"port": 27017,
+            //"database": "test"
+            "DSN": "mi dsn"
+         }
+      }
+   }
+}
