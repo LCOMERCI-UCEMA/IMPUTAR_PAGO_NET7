@@ -1,0 +1,23 @@
+echo
+echo -e "\nCreating directories...\n"
+echo
+
+mkdir -p /home/oracle/fake-sigeu/visa
+echo
+echo -e "\n\t* Creating directory for VISA...\n"
+echo
+
+mkdir -p /home/oracle/fake-sigeu/americanexpress
+echo
+echo -e "\n\t* Creating directory for American Express...\n"
+
+mkdir -p /home/oracle/fake-sigeu/mastercard
+echo
+echo -e "\n\t* Creating directory for Mastercard...\n"
+
+mkdir -p /home/oracle/fake-sigeu/cbu
+echo
+echo -e "\n\t* Creating directory for CBU...\n"
+echo
+
+echo "Done."

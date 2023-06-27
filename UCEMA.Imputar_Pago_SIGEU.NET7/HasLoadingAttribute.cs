@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Reflection;
 using System.Windows.Forms;
-using UCEMA.Proyecto_Base.NET7;
+using UCEMA.Imputar_Pago_SIGEU.NET7;
 
 using Console = System.Diagnostics.Debug;
 
-namespace UCEMA.Proyecto_Base.NET7
+namespace UCEMA.Imputar_Pago_SIGEU.NET7
 {
    [AttributeUsage(AttributeTargets.Method)]
    public class HasLoadingAttribute : Attribute

@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System;
-using System.IO;
+﻿using System.IO;
 using System.Text;
 
-namespace Entidades
+namespace UCEMA.Imputar_Pago_SIGEU.NET7
 {
    public class TextBoxOutput : TextWriter
    {
-      /*
-      TextBox output = null; //Textbox used to show Console's output.
+      TextBox output; //Textbox used to show Console's output.
 
       /// <summary>
       /// Custom <i>TextBox</i>-Class used to print the Console output.
@@ -31,27 +23,33 @@ namespace Entidades
          NewLine = "\r\n";
       }
 
-      //<summary>
-      //Appends text to the textbox and to the logfile
-      //</summary>
-      //<param name="value">Input-string which is appended to the textbox.</param>
+      /// <summary>
+      ///  Appends text to the textbox and to the logfile
+      /// </summary>
+      /// <param name="value">Input-string which is appended to the textbox.</param>
       public override void Write(char value)
       {
          base.Write(value);
          output.AppendText(value.ToString());//Append char to the textbox
       }
 
-      public override void WriteLine(string line)
+      public void Write(char value, bool clear)
       {
-         base.WriteLine(line.Replace("\n", NewLine));
-         output.AppendText(line.Replace("\n", NewLine) + NewLine); //Append line to the textbox
+         base.Write(value);
+         output.AppendText(value.ToString());//Append char to the textbox
+      }
+
+      public override void WriteLine(string? line)
+      {
+         base.WriteLine(line?.Replace("\n", NewLine));
+         output.AppendText(line?.Replace("\n", NewLine) + NewLine); //Append line to the textbox
       }
 
       public void Clear()
       {
          output.Text = String.Empty;//Append char to the textbox
       }
-      */
+
       public override Encoding Encoding
       {
          get { return System.Text.Encoding.UTF8; }

@@ -20,5 +20,10 @@ namespace Logica
 
          //return dt;
       }
+
+      public static DataTable GetVerificacionImputacion()
+      {
+         return Datos.Script.GetVerificacionImputacion();
+      }
    }
 }

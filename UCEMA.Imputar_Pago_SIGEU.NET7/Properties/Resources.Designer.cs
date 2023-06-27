@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UCEMA.Proyecto_Base.NET7.Properties {
+namespace UCEMA.Imputar_Pago_SIGEU.NET7.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace UCEMA.Proyecto_Base.NET7.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UCEMA.Proyecto_Base.NET7.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UCEMA.Imputar_Pago_SIGEU.NET7.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

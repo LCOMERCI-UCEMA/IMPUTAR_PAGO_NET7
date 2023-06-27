@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UCEMA.Proyecto_Base.NET7
+namespace UCEMA.Imputar_Pago_SIGEU.NET7
 {
    public class FormUtils
    {

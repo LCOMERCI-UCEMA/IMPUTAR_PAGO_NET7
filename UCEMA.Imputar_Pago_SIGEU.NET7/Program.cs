@@ -1,4 +1,4 @@
-namespace UCEMA.Proyecto_Base.NET7
+namespace UCEMA.Imputar_Pago_SIGEU.NET7
 {
    internal static class Program
    {
