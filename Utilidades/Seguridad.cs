@@ -9,7 +9,6 @@ namespace Utilidades
    {
       private static byte[] _key = Encoding.UTF8.GetBytes("ucema49585!");
 
-
       /// <summary>
       ///  Encripta cadenas de texto en base64.
       /// </summary>

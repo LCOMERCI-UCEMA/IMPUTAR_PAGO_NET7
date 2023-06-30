@@ -97,7 +97,7 @@
          // statusInformation
          // 
          statusInformation.Items.AddRange(new ToolStripItem[] { tlblStatus });
-         statusInformation.Location = new Point(0, 821);
+         statusInformation.Location = new Point(0, 545);
          statusInformation.Name = "statusInformation";
          statusInformation.Padding = new Padding(1, 0, 16, 0);
          statusInformation.Size = new Size(890, 22);
@@ -133,7 +133,7 @@
          txtStdout.Name = "txtStdout";
          txtStdout.ReadOnly = true;
          txtStdout.ScrollBars = ScrollBars.Both;
-         txtStdout.Size = new Size(572, 306);
+         txtStdout.Size = new Size(572, 168);
          txtStdout.TabIndex = 5;
          // 
          // btnLimpiarStdout
@@ -171,7 +171,7 @@
          txtStderr.Name = "txtStderr";
          txtStderr.ReadOnly = true;
          txtStderr.ScrollBars = ScrollBars.Both;
-         txtStderr.Size = new Size(574, 295);
+         txtStderr.Size = new Size(574, 156);
          txtStderr.TabIndex = 5;
          // 
          // btnLimpiarStderr
@@ -205,8 +205,8 @@
          splitCapturaStream.Panel2.Controls.Add(lblStderr);
          splitCapturaStream.Panel2.Controls.Add(btnLimpiarStderr);
          splitCapturaStream.Panel2.Controls.Add(txtStderr);
-         splitCapturaStream.Size = new Size(890, 627);
-         splitCapturaStream.SplitterDistance = 312;
+         splitCapturaStream.Size = new Size(890, 351);
+         splitCapturaStream.SplitterDistance = 174;
          splitCapturaStream.SplitterWidth = 5;
          splitCapturaStream.TabIndex = 7;
          // 
@@ -228,17 +228,17 @@
          dgvVerificacion.Anchor =  AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
          dgvVerificacion.BackgroundColor = SystemColors.Control;
          dgvVerificacion.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dgvVerificacion.Location = new Point(128, 669);
+         dgvVerificacion.Location = new Point(128, 393);
          dgvVerificacion.Margin = new Padding(4, 3, 4, 3);
          dgvVerificacion.Name = "dgvVerificacion";
-         dgvVerificacion.Size = new Size(574, 145);
+         dgvVerificacion.Size = new Size(557, 145);
          dgvVerificacion.TabIndex = 8;
          // 
          // lblVerificacion
          // 
          lblVerificacion.Anchor =  AnchorStyles.Bottom | AnchorStyles.Left;
          lblVerificacion.AutoSize = true;
-         lblVerificacion.Location = new Point(46, 673);
+         lblVerificacion.Location = new Point(46, 397);
          lblVerificacion.Margin = new Padding(4, 0, 4, 0);
          lblVerificacion.Name = "lblVerificacion";
          lblVerificacion.Size = new Size(71, 15);
@@ -249,7 +249,7 @@
          // 
          btnVerificar.Anchor =  AnchorStyles.Bottom | AnchorStyles.Right;
          btnVerificar.Enabled = false;
-         btnVerificar.Location = new Point(709, 669);
+         btnVerificar.Location = new Point(709, 393);
          btnVerificar.Margin = new Padding(4, 3, 4, 3);
          btnVerificar.Name = "btnVerificar";
          btnVerificar.Size = new Size(138, 29);
@@ -261,7 +261,7 @@
          // pgbInProgress
          // 
          pgbInProgress.Anchor =  AnchorStyles.Bottom | AnchorStyles.Right;
-         pgbInProgress.Location = new Point(586, 822);
+         pgbInProgress.Location = new Point(586, 546);
          pgbInProgress.Margin = new Padding(4, 3, 4, 3);
          pgbInProgress.Name = "pgbInProgress";
          pgbInProgress.Size = new Size(117, 21);
@@ -273,7 +273,7 @@
          // 
          AutoScaleDimensions = new SizeF(7F, 15F);
          AutoScaleMode = AutoScaleMode.Font;
-         ClientSize = new Size(890, 843);
+         ClientSize = new Size(890, 567);
          Controls.Add(pgbInProgress);
          Controls.Add(lblVerificacion);
          Controls.Add(btnVerificar);

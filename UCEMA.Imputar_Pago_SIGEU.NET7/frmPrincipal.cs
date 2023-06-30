@@ -53,21 +53,17 @@ namespace UCEMA.Imputar_Pago_SIGEU.NET7
       protected TextBoxConsole tbConsole;
 
       /// <summary>
-      /// Indica si se está ejecutando en modo de prueba o no.
+      /// Indica si la aplicación se está ejecutando en MODO de PRUEBA o no.
       /// </summary>
-      public bool isFakeRun = true; // TODO: cambiar a false para que funcione en producción
-      //public bool isFakeRun = false; // TODO: cambiar a false para que funcione en producción
+      /// 
+      //public bool isFakeRun = true; // MODO PRUEBA.
+      public bool isFakeRun = false;  // MODO PRODUCTIVO.
 
       public frmPrincipal()
       {
          InitializeComponent();
 
-         //writerStdout = new TextBoxOutput(txtStdout);
-         //writerStderr = new TextBoxOutput(txtStderr);
          tbConsole = new TextBoxConsole(txtStdout, txtStderr);
-
-         //System.Console.SetOut(writerStdout);
-         //System.Console.SetError(writerStderr);
 
          rutasDestino = new Dictionary<string, string>
          {
@@ -94,7 +90,7 @@ namespace UCEMA.Imputar_Pago_SIGEU.NET7
 
          if (cboTipoImputacion.SelectedIndex == 0)
          {
-            //MessageBox.Show("Debe seleccionar un tipo de imputación", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Debe seleccionar un tipo de imputación", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             tbConsole.WriteLine("Debe seleccionar un tipo de imputación");
             return;
          }
@@ -121,9 +117,9 @@ namespace UCEMA.Imputar_Pago_SIGEU.NET7
             // Validacion del formato del archivo (contenidos)
             Boolean archivoValido = ValidarArchivo(sArchivoImputacion, oImputacionElegida.Code);
 
-            // ====================================================================================================
-            // Application.Exit(); return;
-            // ====================================================================================================
+// ====================================================================================================
+// Application.Exit(); return;
+// ====================================================================================================
 
             if (!archivoValido)
             {
